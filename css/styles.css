@@ -1,9 +1,53 @@
+/* General Settings */
+* {
+  box-sizing: border-box;
+}
+
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.center-items {
+  justify-content: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+main {
+  width: 95%;
+  max-width: 550px;
+}
 
 
+/* Header, Footer, Legend, Label */
+.main-header {
+  background-color: #000033;
+  width: 100%;
+  color: white;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+}
 
+.first-letter-capitalized::first-letter {
+  text-transform: uppercase;
+}
 
+.capitalized {
+  text-transform: capitalize;
+}
 
-
+.main-footer, legend {
+  text-transform: capitalize;
+}
 
 /* Mobile */
 

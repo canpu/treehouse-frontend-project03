@@ -7,51 +7,56 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
-    <header>
-      <h>the code review</h2>
+  <body class="flex-vertical">
+    <header class="main-header center-text">
+      <h2 class="webpage-header">the code review</h2>
     </header>
-    <main>
-      <h1>signup for our newsletter</h1>
-      <form action="index.html" method="post">
-        <fieldset>
-          <legend>contact information</legend>
-          <label for="full-name">full name</label>
-          <input id="full-name" name="full-name" type="text" placeholder="Required">
-          <label for="email-address">email address</label>
-          <input id="email-address" name="email-address" type="email" placeholder="Required">
-          <label for="phone-number">phone number</label>
-          <input id="phone-number" name="phone-number" type="tel" placeholder="">
-          <label for="address">street address</label>
-          <input id="address" name="address" type="text" placeholder="">
-          <label for="city">city</label>
-          <input id="city" name="city" type="text" placeholder="">
-          <label for="state">state</label>
-          <input id="state" name="state" type="text" placeholder="">
-          <label for="zip">zip code</label>
-          <input id="zip" name="zip" type="number" placeholder="">
-        </fieldset>
-        <fieldset>
-          <legend>newsletter</legend>
-          <label>select the newsletters you would like to receive</label>
-          <input id="html-news" type="checkbox" name="preferred-newsletter" value="html-news">
-          <label for="html-news"><span class="frontend-language">HTML</span> news</label>
-          <input id="css-news" type="checkbox" name="preferred-newsletter" value="css-news">
-          <label for="css-news"><span class="frontend-language">CSS</span> news</label>
-          <input id="js-news" type="checkbox" name="preferred-newsletter" value="js-news">
-          <label for="js-news"><span class="frontend-language">Javascript</span> news</label>
-          <label>newsletter format</label>
-          <input id="html" type="radio" name="newsletter-format" value="html">
-          <label for="html"><span class="frontend-language">HTML</span></label>
-          <input id="plain-text" type="radio" name="newsletter-format" value="plain-text">
-          <label for="plain-text">Plain text</label>
-          <label for="customer-liked-topics">newsletter format</label>
-          <textarea id="customer-liked-topics" name="customer-liked-topics"></textarea>
-        </fieldset>
-      </form>
+    <main class="flex-vertical center-items">
+      <div class="form-wrapper">
+        <header>
+          <h1 class="form-heading first-letter-capitalized">signup for our newsletter</h1>
+          <p>get the latest news on how your code is doing right in your inbox</p>
+        </header>
+        <form action="index.html" method="post">
+          <fieldset>
+            <legend class="capitalized">contact information</legend>
+            <label class="capitalized" for="full-name">full name</label>
+            <input id="full-name" name="full-name" type="text" placeholder="Required">
+            <label class="capitalized" for="email-address">email address</label>
+            <input id="email-address" name="email-address" type="email" placeholder="Required">
+            <label class="capitalized" for="phone-number">phone number</label>
+            <input id="phone-number" name="phone-number" type="tel" placeholder="">
+            <label class="capitalized" for="address">street address</label>
+            <input id="address" name="address" type="text" placeholder="">
+            <label class="capitalized" for="city">city</label>
+            <input id="city" name="city" type="text" placeholder="">
+            <label class="capitalized" for="state">state</label>
+            <input id="state" name="state" type="text" placeholder="">
+            <label class="capitalized" for="zip">zip code</label>
+            <input id="zip" name="zip" type="number" placeholder="">
+          </fieldset>
+          <fieldset>
+            <legend class="capitalized">newsletter</legend>
+            <label class="first-letter-capitalized">select the newsletters you would like to receive</label>
+            <input id="html-news" type="checkbox" name="preferred-newsletter" value="html-news">
+            <label for="html-news"><span class="frontend-language">HTML</span> news</label>
+            <input id="css-news" type="checkbox" name="preferred-newsletter" value="css-news">
+            <label for="css-news"><span class="frontend-language">CSS</span> news</label>
+            <input id="js-news" type="checkbox" name="preferred-newsletter" value="js-news">
+            <label for="js-news"><span class="frontend-language first-letter-capitalized">javascript</span> news</label>
+            <label class="first-letter-capitalized">newsletter format</label>
+            <input id="html" type="radio" name="newsletter-format" value="html">
+            <label for="html"><span class="frontend-language">HTML</span></label>
+            <input id="plain-text" type="radio" name="newsletter-format" value="plain-text">
+            <label for="plain-text first-letter-capitalized">plain text</label>
+            <label for="customer-liked-topics first-letter-capitalized">newsletter format</label>
+            <textarea id="customer-liked-topics" name="customer-liked-topics"></textarea>
+          </fieldset>
+        </form>
+      <div class="form-wrapper">
     </main>
-    <footer class="main-footer">
-      Copyright &copy; The Code Review
+    <footer class="main-footer capitalized">
+      copyright &copy; the code review
     </footer>
   </body>
 </html>
