@@ -16,7 +16,7 @@ function fadeInElements() {
   function fadeIn ($item) {
     let itemTopPosition = $item.offset().top;
     let itemCenterPosition = itemTopPosition + $item.height() / 2.0;
-    if (Math.abs((itemCenterPosition - windowCenterPosition) / windowHeight) < 0.4) {
+    if (Math.abs((itemCenterPosition - windowCenterPosition) / windowHeight) < 0.475) {
       $item.animate({opacity: 1}, 1250);
     }
   }

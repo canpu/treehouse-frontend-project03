@@ -182,6 +182,7 @@ textarea:hover,
   width: 7px;
   height: 7px;
   border-radius: 50%;
+  transition: background-color 0.5s linear;
 }
 
 #registration-form-newsletter input:checked[type="radio"] + label::before {
@@ -189,17 +190,20 @@ textarea:hover,
 }
 
 #registration-form-newsletter input[type="checkbox"] + label::before {
+  content: "";
   border: none;
   width: 14px;
   height: 14px;
   border-radius: 3px;
+  color: white;
+  font-size: 20px;
+  transition: all 0.75s linear;
 }
 
 #registration-form-newsletter input:checked[type="checkbox"] + label::before {
   content: "✓";
-  font-size: 7px;
+  font-size: 10px;
   font-weight: 800;
-  color: white;
 }
 
 .choice-group {
