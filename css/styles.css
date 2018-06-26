@@ -80,7 +80,10 @@ form {
 fieldset {
   border: none;
   width: 100%;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 10px;
   text-align: left;
 }
 
@@ -126,8 +129,11 @@ textarea,
 #registration-form-contact select {
   border: none;
   border-radius: 3px;
-  background-color: #ddd;
+  background-color: rgba(221, 221, 221, 0.5);
   border: none;
+  transition: background-color 0.8s linear,
+              box-shadow 1s ease,
+              opacity 0.7s linear;
 }
 
 textarea:focus,
@@ -136,7 +142,7 @@ textarea:focus,
 textarea:hover,
 #registration-form-contact input:hover,
 #registration-form-contact select:hover {
-  background-color: #bbb;
+  background-color: rgba(168, 168, 168, 1);
 }
 
 #registration-form-contact input,
@@ -166,20 +172,27 @@ textarea:hover,
   position: absolute;
   top: 2px;
   left: -20px;
-  width: 7px;
-  height: 7px;
   background-color: darkgreen;
-  border: solid 4px darkgreen;
   text-align: center;
   vertical-align: center;
 }
 
 #registration-form-newsletter input[type="radio"] + label::before {
+  border: solid 4px darkgreen;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
 }
 
 #registration-form-newsletter input:checked[type="radio"] + label::before {
   background-color: white;
+}
+
+#registration-form-newsletter input[type="checkbox"] + label::before {
+  border: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
 }
 
 #registration-form-newsletter input:checked[type="checkbox"] + label::before {
@@ -238,6 +251,7 @@ fieldset:not(:first-child) {
 
 .form-header {
   background-color: #ffe6f2;
+  margin-bottom: 20px;
 }
 
 /* Mobile */
