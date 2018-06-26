@@ -243,6 +243,15 @@ form > hr {
   border-radius: 5px;
   border: none;
   color: white;
+  transition: all 0.5s linear;
+}
+
+.submit-button {
+  font-weight: bold;
+}
+
+.submit-button:active {
+  text-shadow: 0 0 2px grey;
 }
 
 fieldset:first-child {
